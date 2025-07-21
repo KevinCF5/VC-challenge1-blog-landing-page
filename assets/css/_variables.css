@@ -1,0 +1,14 @@
+/* VARIABLES */
+
+:root {
+  --background: #111827;
+  --grey01: #f9fafb;
+  --grey02: #e5e7eb;
+  --blue01: #111827;
+  --blue02: #0078ff;
+  --primaryGradient: linear-gradient(93.54deg, #3b82f6 9.03%, #d946ef 43.88%);
+  --fontWeightRegular: 400;
+  --fontWeightMedium: 500;
+  --fontWeightSemiBold: 600;
+  --fontWeightBold: 700;
+}

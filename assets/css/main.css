@@ -1,1 +1,47 @@
-@import url("variables.css");
+@import url("_variables.css");
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--grey01);
+}
+
+/* TYPOGRAPHY */
+
+h2,
+h3,
+h4 {
+  font-weight: var(--fontWeightSemiBold);
+}
+
+h1 {
+  color: var(--primaryGradient);
+  font-weight: var(--fontWeightBold);
+  font-size: 7rem;
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+
+h2 {
+  color: var(--grey01);
+  font-size: 3.6rem;
+}
+
+h3 {
+  color: var(--blue02);
+  font-size: 2.8rem;
+}
+
+h4 {
+  color: var(--blue02);
+  font-size: 2rem;
+}
+
+p {
+  color: var(--grey02);
+  font-weight: var(--fontWeightMedium);
+  font-size: 1.5rem;
+}
