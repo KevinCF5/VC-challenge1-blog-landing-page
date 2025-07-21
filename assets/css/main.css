@@ -31,12 +31,12 @@ h2 {
 }
 
 h3 {
-  color: var(--blue02);
+  color: var(--blue03);
   font-size: 2.8rem;
 }
 
 h4 {
-  color: var(--blue02);
+  color: var(--blue03);
   font-size: 2rem;
 }
 
@@ -44,4 +44,68 @@ p {
   color: var(--grey02);
   font-weight: var(--fontWeightMedium);
   font-size: 1.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.primaryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.primaryHeader .leftMenu {
+  width: 15%;
+}
+
+.primaryHeader .leftMenu img {
+  width: 23px;
+  height: 23px;
+}
+
+.primaryHeader .navMenu nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.primaryHeader .navMenu nav ul li a {
+  font-weight: var(--fontWeightMedium);
+  font-size: 1.4rem;
+  color: var(--grey01);
+  text-decoration: none;
+}
+
+.primaryHeader .rightMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.primaryHeader .rightMenu button {
+  cursor: pointer;
+  font-weight: var(--fontWeightMedium);
+  font-size: 1.4rem;
+  color: var(--grey01);
+  padding: 12px 24px;
+  height: 41px;
+  border: none;
+  border-radius: 5px;
+}
+
+.primaryHeader .rightMenu .loginBtn {
+  background-color: var(--blue04);
+  width: 85px;
+}
+
+.primaryHeader .rightMenu .signUpBtn {
+  background-color: var(--blue02);
+  width: 100px;
 }
