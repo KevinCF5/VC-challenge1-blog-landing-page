@@ -23,6 +23,7 @@ h1 {
   font-weight: var(--fontWeightBold);
   font-size: 7rem;
   font-family: "Fira Sans Condensed", sans-serif;
+  letter-spacing: 2px;
 }
 
 h2 {
@@ -45,6 +46,8 @@ p {
   font-weight: var(--fontWeightMedium);
   font-size: 1.5rem;
 }
+
+/* HEADER SECTION */
 
 .container {
   width: 100%;
@@ -89,6 +92,7 @@ p {
   align-items: center;
   gap: 8px;
 }
+
 .primaryHeader .rightMenu button {
   cursor: pointer;
   font-weight: var(--fontWeightMedium);
@@ -108,4 +112,97 @@ p {
 .primaryHeader .rightMenu .signUpBtn {
   background-color: var(--blue02);
   width: 100px;
+}
+
+/* BANNER SECTION */
+
+.sectionHero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.sectionHero .rightCol {
+  width: 53%;
+  position: relative;
+}
+
+.sectionHero .rightCol::before {
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: var(--blue04);
+  left: 350px;
+  top: 200px;
+  position: absolute;
+  background-image: radial-gradient(
+    closest-side,
+    var(--blue04),
+    var(--background)
+  );
+  z-index: -1;
+}
+
+.sectionHero .rightCol img:first-child {
+  width: 130px;
+  height: 160px;
+  position: absolute;
+  top: 165px;
+  left: 70px;
+}
+
+.sectionHero .rightCol img:last-child {
+  width: 722px;
+  height: 722px;
+  margin-top: 84px;
+}
+
+.sectionHero .leftCol {
+  margin-bottom: 150px;
+}
+
+.sectionHero .leftCol::before {
+  content: "";
+  width: 400px;
+  height: 400px;
+  background: var(--blue04);
+  left: -300px;
+  top: 100px;
+  position: absolute;
+  background-image: radial-gradient(
+    closest-side,
+    var(--blue04),
+    var(--background)
+  );
+  z-index: -1;
+}
+
+.sectionHero .leftCol h1 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  background: var(--primaryGradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionHero .leftCol p {
+  max-width: 430px;
+  line-height: 3rem;
+  margin-bottom: 30px;
+}
+
+.sectionHero .leftCol button {
+  cursor: pointer;
+  font-weight: var(--fontWeightMedium);
+  font-size: 1.6rem;
+  color: var(--grey01);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 6px;
+  letter-spacing: 1px;
+}
+
+.sectionHero .leftCol .getStartedBtn {
+  background: linear-gradient(90deg, #3b82f6 20%, #d946ef 90%);
 }
