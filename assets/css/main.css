@@ -206,3 +206,63 @@ p {
 .sectionHero .leftCol .getStartedBtn {
   background: linear-gradient(90deg, #3b82f6 20%, #d946ef 90%);
 }
+
+/* GALLERY SECTION */
+
+.sectionGallery {
+  margin-top: 60px;
+}
+
+.sectionGallery header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.sectionGallery header a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--blue03);
+  font-size: 2rem;
+  font-weight: var(--fontWeightSemiBold);
+}
+
+.sectionGallery .galleryImagesContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  width: 100vw;
+}
+
+.sectionGallery .galleryImagesContainer img {
+  width: 342px;
+  height: 442px;
+}
+
+.sectionGallery .galleryImagesContainer img:last-child {
+  max-width: 13%;
+  height: 442px;
+}
+
+/* ARTICLES SECTION */
+
+.sectionArticles {
+  margin-top: 60px;
+}
+
+.sectionArticles header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.sectionArticles header a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--blue03);
+  font-size: 2rem;
+  font-weight: var(--fontWeightSemiBold);
+}
