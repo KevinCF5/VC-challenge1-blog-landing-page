@@ -1,5 +1,9 @@
 @import url("_variables.css");
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
@@ -99,7 +103,6 @@ p {
   font-size: 1.4rem;
   color: var(--grey01);
   padding: 12px 24px;
-  height: 41px;
   border: none;
   border-radius: 5px;
 }
@@ -217,7 +220,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .sectionGallery header a {
@@ -256,7 +259,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .sectionArticles header a {
@@ -265,4 +268,378 @@ p {
   color: var(--blue03);
   font-size: 2rem;
   font-weight: var(--fontWeightSemiBold);
+}
+
+.articlesContainer {
+  display: grid;
+  grid-template-columns: 475px 1fr 460px;
+  grid-gap: 30px;
+}
+
+.articlesContainer article {
+  border-radius: 28px;
+  padding: 40px 45px 0px 45px;
+  height: 400px;
+}
+
+.articlesContainer .articleTopic {
+  background-color: var(--grey01);
+  display: inline-block;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.articlesContainer .articleContent h3 {
+  color: var(--blue01);
+  margin-bottom: 15px;
+}
+
+.articlesContainer .articleContent a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--blue03);
+  font-size: 1.4rem;
+  font-weight: var(--fontWeightRegular);
+}
+
+/* FREELANCE ARTICLE */
+
+.articlesContainer .articleFreelance {
+  grid-column: 1 / span 2;
+  background: linear-gradient(
+    109.56deg,
+    #ccfbf1 8.75%,
+    #bbdce9 101.85%,
+    #99f6e4 101.85%
+  );
+  position: relative;
+}
+
+.articlesContainer .articleFreelance .articleTopic p {
+  color: #0f766e;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+}
+
+.articlesContainer .articleFreelance .articleContent {
+  margin-top: 130px;
+}
+
+.articlesContainer .articleFreelance .articleContent p {
+  color: #648e9e;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.articlesContainer .articleFreelance .articleContent img {
+  width: 160px;
+  height: 240px;
+  position: absolute;
+  top: -15px;
+  left: 340px;
+  border-radius: 18px;
+}
+
+.articlesContainer .articleFreelance .articleContent img:last-child {
+  width: 160px;
+  height: 240px;
+  position: absolute;
+  top: 168px;
+  left: 490px;
+  border-radius: 18px;
+}
+
+/* TIPS AND TRICKS ARTICLE */
+
+.articlesContainer .articleTipsAndTricks {
+  background: linear-gradient(128.14deg, #ffedd5 2.71%, #fed7aa 97.55%);
+}
+
+.articlesContainer .articleTipsAndTricks .articleTopic p {
+  color: #fb923c;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+}
+
+.articlesContainer .articleTipsAndTricks .articleContent p {
+  color: #c07e63;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.articlesContainer .articleTipsAndTricks .iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 3px;
+  margin-top: -30px;
+}
+
+.articlesContainer .articleTipsAndTricks .iconsContainer .iconSmall {
+  background-color: var(--grey01);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 77px;
+  border-radius: 100%;
+}
+
+.articlesContainer .articleTipsAndTricks .iconsContainer .iconLarge {
+  background-color: var(--grey01);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 133px;
+  height: 133px;
+  border-radius: 100%;
+}
+
+.articlesContainer .iconsContainer .iconSmall img {
+  width: 28px;
+  height: 28px;
+}
+
+.articlesContainer .iconsContainer .iconLarge img {
+  width: 48px;
+  height: 48px;
+}
+
+/* TUTORIAL ARTICLE */
+
+.articlesContainer .articleTutorial {
+  background: linear-gradient(127.16deg, #fef9c3 3.85%, #fef08a 95.73%);
+}
+
+.articlesContainer .articleTutorial .articleTopic p {
+  color: #ca8a04;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+}
+
+.articlesContainer .articleTutorial .articleContent p {
+  color: #b49467;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.articlesContainer .articleTutorial .iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.articlesContainer .articleTutorial .iconsContainer .iconLarge {
+  background-color: var(--grey01);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  height: 147px;
+  border-radius: 100%;
+}
+
+/* PROJECTION ARTICLE */
+
+.articlesContainer .articleProjection {
+  grid-column: 2 / span 2;
+  background: linear-gradient(109.56deg, #f3e8ff 8.75%, #d8b4fe 101.85%);
+}
+
+.articlesContainer .articleProjection .articleTopic p {
+  color: #6a62b7;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+}
+
+.articlesContainer .articleProjection .articleContent p {
+  color: #746fa7;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.articlesContainer .articleProjection .photosContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.articlesContainer .articleProjection .photosContainer img {
+  width: 84px;
+  height: 84px;
+}
+
+.articlesContainer .articleProjection .photosContainer .photosContainerLeft {
+  position: relative;
+}
+
+.articlesContainer .articleProjection .photosContainer .photosContainerRight {
+  position: relative;
+}
+
+.articlesContainer
+  .articleProjection
+  .photosContainer
+  .photosContainerLeft
+  .photoImg2 {
+  left: 60px;
+  position: absolute;
+}
+
+.articlesContainer
+  .articleProjection
+  .photosContainer
+  .photosContainerRight
+  .photoImg3 {
+  left: -240px;
+  position: absolute;
+}
+
+.articlesContainer
+  .articleProjection
+  .photosContainer
+  .photosContainerRight
+  .photoImg4 {
+  left: -180px;
+  position: absolute;
+}
+
+.articlesContainer
+  .articleProjection
+  .photosContainer
+  .photosContainerRight
+  .photoImg5 {
+  left: -120px;
+  position: absolute;
+}
+
+.articlesContainer
+  .articleProjection
+  .photosContainer
+  .photosContainerRight
+  .photoImg6 {
+  left: -60px;
+  position: absolute;
+  z-index: 0;
+}
+
+.articlesContainer
+  .articleProjection
+  .photosContainer
+  .photosContainerRight
+  .photoImg7 {
+  z-index: 1;
+  position: relative;
+}
+
+/* COLLECTION ARTICLE */
+
+.articlesContainer .articleCollection {
+  background: linear-gradient(110deg, #ddd6fe 102%, #a78bfa 8%);
+  grid-column: 1 / span 3;
+  position: relative;
+  overflow: hidden;
+}
+
+.articlesContainer .articleCollection .articleContent {
+  margin-top: 90px;
+}
+
+.articlesContainer .articleCollection .articleContent p {
+  color: #9e69aa;
+  font-weight: var(--fontWeightRegular);
+  font-size: 1.4rem;
+  line-height: 24px;
+  margin-top: 0;
+}
+
+.articlesContainer .articleCollection .articleContent button {
+  background: linear-gradient(93.54deg, #af51c5 5.09%, #6e297e 91.93%);
+  cursor: pointer;
+  font-weight: var(--fontWeightMedium);
+  font-size: 1.4rem;
+  color: var(--grey01);
+  padding: 20px 36px;
+  width: 170px;
+  border: none;
+  border-radius: 5px;
+}
+
+.articlesContainer .articleCollection img {
+  position: absolute;
+}
+
+.articlesContainer .articleCollection .img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+  width: 150px;
+}
+
+.articlesContainer .articleCollection .img1,
+.img2,
+.img3 {
+  left: 680px;
+}
+
+.articlesContainer .articleCollection .img1 {
+  top: 0px;
+}
+
+.articlesContainer .articleCollection .img2 {
+  top: 60px;
+  height: 200px;
+}
+
+.articlesContainer .articleCollection .img3 {
+  top: 280px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.articlesContainer .articleCollection .img4,
+.img5,
+.img6 {
+  left: 851px;
+}
+
+.articlesContainer .articleCollection .img4 {
+  top: 0px;
+  border-bottom: 20px;
+}
+
+.articlesContainer .articleCollection .img5 {
+  top: 135px;
+}
+
+.articlesContainer .articleCollection .img6 {
+  top: 360px;
+}
+
+.articlesContainer .articleCollection .img7,
+.img8 {
+  left: 1023px;
+  width: 178px;
+}
+
+.articlesContainer .articleCollection .img7 {
+  top: 0px;
+}
+
+.articlesContainer .articleCollection .img8 {
+  top: 265px;
 }
