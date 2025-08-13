@@ -10,9 +10,9 @@ A pixel-focused implementation of a blog landing page based on a community Figma
 
 ### Preview / Screenshots
 
-![Hero (desktop)](assets/images/screenshots/hero-desktop.png)
-![Articles grid (desktop)](assets/images/screenshots/articles-desktop.png)
-![Footer (desktop)](assets/images/screenshots/footer-desktop.png)
+![Hero (desktop)](assets/images/Screenshots/hero-desktop.png)
+![Articles grid (desktop)](assets/images/Screenshots/articles-desktop.png)
+![Footer (desktop)](assets/images/Screenshots/footer-desktop.png)
 
 ### Tech Stack
 
