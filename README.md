@@ -51,8 +51,8 @@ VC-challenge1-blog-landing-page/
     css/
       _variables.css
       main.css
-    images/  (UI images used in the design)
-    screenshots/  (add your page screenshots here)
+    images/
+    screenshots/
 ```
 
 ### Project Links
